@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextClock;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -66,6 +68,56 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        // Australia
+        FrameLayout include_syd = findViewById(R.id.include_syd);
+        ImageView image = include_syd.findViewById(R.id.image_view);
+        TextView text = include_syd.findViewById(R.id.text_view);
+        TextClock clock = include_syd.findViewById(R.id.text_clock);
+
+        image.setImageResource(R.drawable.sydney);
+        text.setText(R.string.Australia_Sydney);
+        clock.setTimeZone("Australia/Sydney");
+
+        //Tokyo
+        FrameLayout include_tok = findViewById(R.id.include_tok);
+        image = include_tok.findViewById(R.id.image_view);
+        text = include_tok.findViewById(R.id.text_view);
+        clock = include_tok.findViewById(R.id.text_clock);
+
+        image.setImageResource(R.drawable.tokyo);
+        text.setText(R.string.Asia_Tokyo);
+        clock.setTimeZone("Asia/Tokyo");
+
+        // America
+        FrameLayout include_ny = findViewById(R.id.include_ny);
+        image = include_ny.findViewById(R.id.image_view);
+        text = include_ny.findViewById(R.id.text_view);
+        clock = include_ny.findViewById(R.id.text_clock);
+
+        image.setImageResource(R.drawable.newyork);
+        text.setText(R.string.America_New_York);
+        clock.setTimeZone("America/New_York");
+
+
+        // China
+        FrameLayout include_sha = findViewById(R.id.include_sha);
+        image = include_sha.findViewById(R.id.image_view);
+        text = include_sha.findViewById(R.id.text_view);
+        clock = include_sha.findViewById(R.id.text_clock);
+
+        image.setImageResource(R.drawable.shanghai);
+        text.setText(R.string.Asia_Shanghai);
+        clock.setTimeZone("Asia/Shanghai");
+
+        // London
+        FrameLayout include_lon = findViewById(R.id.include_lon);
+        image = include_lon.findViewById(R.id.image_view);
+        text = include_lon.findViewById(R.id.text_view);
+        clock = include_lon.findViewById(R.id.text_clock);
+
+        image.setImageResource(R.drawable.london);
+        text.setText(R.string.Europe_London);
+        clock.setTimeZone("Europe/London");
 
 
 

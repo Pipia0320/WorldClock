@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">WorldClock</string>
+    <string name="Australia_Sydney">Sydney</string>
+    <string name="Asia_Tokyo">Tokyo</string>
+    <string name="America_New_York">New York</string>
+    <string name="Asia_Shanghai">Shanghai</string>
+    <string name="Europe_London">London</string>
+
 </resources>
